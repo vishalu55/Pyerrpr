@@ -1,0 +1,103 @@
+C:\Users\visha>pip install face_recognition
+Collecting face_recognition
+  Using cached face_recognition-1.3.0-py2.py3-none-any.whl (15 kB)
+Collecting dlib>=19.7
+  Using cached dlib-19.24.2.tar.gz (11.8 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting Click>=6.0
+  Using cached click-8.0.4-py3-none-any.whl (97 kB)
+Collecting numpy
+  Using cached numpy-1.19.5-cp36-cp36m-win_amd64.whl (13.2 MB)
+Collecting Pillow
+  Using cached Pillow-8.4.0-cp36-cp36m-win_amd64.whl (3.2 MB)
+Collecting face-recognition-models>=0.3.0
+  Using cached face_recognition_models-0.3.0.tar.gz (100.1 MB)
+  Preparing metadata (setup.py) ... done
+Collecting colorama
+  Using cached colorama-0.4.5-py2.py3-none-any.whl (16 kB)
+Collecting importlib-metadata
+  Using cached importlib_metadata-4.8.3-py3-none-any.whl (17 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.6.0-py3-none-any.whl (5.3 kB)
+Collecting typing-extensions>=3.6.4
+  Using cached typing_extensions-4.1.1-py3-none-any.whl (26 kB)
+Using legacy 'setup.py install' for face-recognition-models, since package 'wheel' is not installed.
+Building wheels for collected packages: dlib
+  Building wheel for dlib (pyproject.toml) ... error
+  ERROR: Command errored out with exit status 1:
+   command: 'c:\users\visha\appdata\local\programs\python\python36\python.exe' 'c:\users\visha\appdata\local\programs\python\python36\lib\site-packages\pip\_vendor\pep517\in_process\_in_process.py' build_wheel 'C:\Users\visha\AppData\Local\Temp\tmp1onyx9ep'
+       cwd: C:\Users\visha\AppData\Local\Temp\pip-install-ki4gvkmc\dlib_a26b37d19fd54ca39e2b255430bc605a
+  Complete output (67 lines):
+  running bdist_wheel
+  running build
+  running build_ext
+  Building extension for Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)]
+  Invoking CMake setup: 'cmake C:\Users\visha\AppData\Local\Temp\pip-install-ki4gvkmc\dlib_a26b37d19fd54ca39e2b255430bc605a\tools\python -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\visha\AppData\Local\Temp\pip-install-ki4gvkmc\dlib_a26b37d19fd54ca39e2b255430bc605a\build\lib.win-amd64-3.6 -DPYTHON_EXECUTABLE=c:\users\visha\appdata\local\programs\python\python36\python.exe -DCMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE=C:\Users\visha\AppData\Local\Temp\pip-install-ki4gvkmc\dlib_a26b37d19fd54ca39e2b255430bc605a\build\lib.win-amd64-3.6 -A x64'
+  -- Building for: NMake Makefiles
+  CMake Error at CMakeLists.txt:5 (message):
+
+
+
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+    You must use Visual Studio to build a python extension on windows.  If you
+    are getting this error it means you have not installed Visual C++.  Note
+    that there are many flavors of Visual Studio, like Visual Studio for C#
+    development.  You need to install Visual Studio for C++.
+
+
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+  -- Configuring incomplete, errors occurred!
+  Traceback (most recent call last):
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\site-packages\pip\_vendor\pep517\in_process\_in_process.py", line 363, in <module>
+      main()
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\site-packages\pip\_vendor\pep517\in_process\_in_process.py", line 345, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\site-packages\pip\_vendor\pep517\in_process\_in_process.py", line 262, in build_wheel
+      metadata_directory)
+    File "C:\Users\visha\AppData\Local\Temp\pip-build-env-8150ux2v\overlay\Lib\site-packages\setuptools\build_meta.py", line 231, in build_wheel
+      wheel_directory, config_settings)
+    File "C:\Users\visha\AppData\Local\Temp\pip-build-env-8150ux2v\overlay\Lib\site-packages\setuptools\build_meta.py", line 215, in _build_with_temp_dir
+      self.run_setup()
+    File "C:\Users\visha\AppData\Local\Temp\pip-build-env-8150ux2v\overlay\Lib\site-packages\setuptools\build_meta.py", line 158, in run_setup
+      exec(compile(code, __file__, 'exec'), locals())
+    File "setup.py", line 250, in <module>
+      'Topic :: Software Development',
+    File "C:\Users\visha\AppData\Local\Temp\pip-build-env-8150ux2v\overlay\Lib\site-packages\setuptools\__init__.py", line 153, in setup
+      return distutils.core.setup(**attrs)
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\core.py", line 148, in setup
+      dist.run_commands()
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\dist.py", line 955, in run_commands
+      self.run_command(cmd)
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\dist.py", line 974, in run_command
+      cmd_obj.run()
+    File "C:\Users\visha\AppData\Local\Temp\pip-build-env-8150ux2v\overlay\Lib\site-packages\wheel\bdist_wheel.py", line 299, in run
+      self.run_command('build')
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\cmd.py", line 313, in run_command
+      self.distribution.run_command(command)
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\dist.py", line 974, in run_command
+      cmd_obj.run()
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\command\build.py", line 135, in run
+      self.run_command(cmd_name)
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\cmd.py", line 313, in run_command
+      self.distribution.run_command(command)
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\distutils\dist.py", line 974, in run_command
+      cmd_obj.run()
+    File "setup.py", line 130, in run
+      self.build_extension(ext)
+    File "setup.py", line 167, in build_extension
+      subprocess.check_call(cmake_setup, cwd=build_folder)
+    File "c:\users\visha\appdata\local\programs\python\python36\lib\subprocess.py", line 291, in check_call
+      raise CalledProcessError(retcode, cmd)
+  subprocess.CalledProcessError: Command '['cmake', 'C:\\Users\\visha\\AppData\\Local\\Temp\\pip-install-ki4gvkmc\\dlib_a26b37d19fd54ca39e2b255430bc605a\\tools\\python', '-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\visha\\AppData\\Local\\Temp\\pip-install-ki4gvkmc\\dlib_a26b37d19fd54ca39e2b255430bc605a\\build\\lib.win-amd64-3.6', '-DPYTHON_EXECUTABLE=c:\\users\\visha\\appdata\\local\\programs\\python\\python36\\python.exe', '-DCMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE=C:\\Users\\visha\\AppData\\Local\\Temp\\pip-install-ki4gvkmc\\dlib_a26b37d19fd54ca39e2b255430bc605a\\build\\lib.win-amd64-3.6', '-A', 'x64']' returned non-zero exit status 1.
+  ----------------------------------------
+  ERROR: Failed building wheel for dlib
+Failed to build dlib
+ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based projects
